@@ -1,14 +1,16 @@
+<script>
+  import 'bootstrap/dist/css/bootstrap.min.css';
+  import 'jquery/dist/jquery.slim.min.js';
+  import 'popper.js/dist/umd/popper.min.js';
+  import 'bootstrap/dist/js/bootstrap.min.js';
+</script>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Singularity Software</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
