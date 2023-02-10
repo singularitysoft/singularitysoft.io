@@ -41,7 +41,6 @@
         actionable insights and automate tasks, freeing up time for you to 
         focus on what matters most.
       </p>
-      <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
     </div>
   </section>
   <section id="about" class="bg-light">
@@ -185,10 +184,11 @@
   }
 
   h2.features {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
 
   h2.pricing {
+    margin-top: 0;
     padding-top: 32px;
   }
 
@@ -196,7 +196,16 @@
     margin-bottom: 8px;
   }
 
+  p.lead {
+    margin-bottom: 32px !important;
+  }
+
+  ul li {
+    /*margin: 16px;*/
+  }
+
   .btn {
+    margin-top: 24px;
     margin-bottom: 6px;
   }
 
@@ -207,6 +216,14 @@
 
   .container {
     margin-bottom: 24px;
+  }
+
+  section#contact .container .form-group {
+    text-align: left;
+  }
+
+  section#contact .container {
+    text-align: center;
   }
 
   .navbar-expand-lg>.container {
