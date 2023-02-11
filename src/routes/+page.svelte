@@ -4,11 +4,16 @@
   import 'popper.js/dist/umd/popper.min.js';
   import 'bootstrap/dist/js/bootstrap.min.js';
 
-  function handleClickContact(evt) {
-    evt.preventDefault();
-    console.log('handleClickContact');
-    window.location.href = 'mailto:myaddress@email.com?subject= Software Singularity Business Inquiry';;
-  }
+function handleClickContact(evt) {
+  evt.preventDefault();
+
+  const fromEmail = document.getElementById("email").value;
+  const fromTitle = encodeURIComponent(document.getElementById("name").value);
+  const fromBody = encodeURIComponent(document.getElementById("message").value);
+  
+  window.location.href = `mailto:ericgrosse1@gmail.com?cc=${fromEmail}&subject=${fromTitle}&body=${fromBody}`;
+}
+
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -105,7 +110,7 @@
           <label for="message">Message</label>
           <textarea class="form-control" id="message" rows="3"></textarea>
         </div>
-        <button on:click={handleSubmit} type="submit" class="btn btn-primary">Submit</button>
+        <button on:click={handleSubmit} class="btn btn-primary">Submit</button>
       </form>
     </div>
   </section>
@@ -119,6 +124,7 @@
 
 <style>
   h1 {
+    font-size: 32px;
     margin-top: 48px !important;
     margin-bottom: 36px !important;
   }
@@ -151,6 +157,10 @@
     flex-direction: column;
     margin-bottom: 24px;
     padding: 16px;
+  }
+
+  a.navbar-brand {
+    font-size: 36px;
   }
 
   a.navbar-brand, a.nav-link {
