@@ -3,6 +3,12 @@
   import 'jquery/dist/jquery.slim.min.js';
   import 'popper.js/dist/umd/popper.min.js';
   import 'bootstrap/dist/js/bootstrap.min.js';
+
+  function handleClickContact(evt) {
+    evt.preventDefault();
+    console.log('handleClickContact');
+    window.location.href = 'mailto:myaddress@email.com?subject= Software Singularity Business Inquiry';;
+  }
 </script>
 
 <html lang="en">
@@ -137,7 +143,7 @@
                 <li class="list-group-item">Dedicated Account Manager</li>
                 <li class="list-group-item">Customized Solutions</li>
               </ul>
-              <a href="#" class="btn btn-primary">Contact Us</a>
+              <a href="#" class="btn btn-primary" on:click={handleClickContact}>Contact Us</a>
             </div>
           </div>
         </div>
