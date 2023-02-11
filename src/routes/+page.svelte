@@ -45,9 +45,6 @@
             <a class="nav-link" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -56,9 +53,9 @@
   </nav>
   <section id="hero" class="text-center">
     <div class="container">
-      <h1 class="mb-5">Revolutionize your business with AI</h1>
+      <h1 class="mb-5">Revolutionize Your Business With SolarisAI</h1>
       <p class="lead mb-5">
-        Our AI software uses cutting-edge technology to provide you with 
+        Our SolarisAI software uses cutting-edge technology to provide you with 
         actionable insights and automate tasks, freeing up time for you to 
         focus on what matters most.
       </p>
@@ -104,56 +101,6 @@
             <div class="card-body">
               <h4 class="card-title">Intuitive User Interface</h4>
               <p class="card-text">Our software is designed with the user in mind and has an intuitive user interface, making it easy for anyone to use.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="pricing" class="bg-light">
-    <div class="container">
-      <h2 class="text-center pricing">Pricing</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Basic</h4>
-              <p class="card-text">$49/month</p>
-              <ul class="list-group">
-                <li class="list-group-item">Automated Tasks</li>
-                <li class="list-group-item">Limited Insights</li>
-                <li class="list-group-item">Basic Support</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Pro</h4>
-              <p class="card-text">$99/month</p>
-              <ul class="list-group">
-                <li class="list-group-item">Automated Tasks</li>
-                <li class="list-group-item">Actionable Insights</li>
-                <li class="list-group-item">24/7 Support</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-         
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Enterprise</h4>
-              <p class="card-text">Custom pricing</p>
-              <ul class="list-group">
-                <li class="list-group-item">All Features</li>
-                <li class="list-group-item">Dedicated Account Manager</li>
-                <li class="list-group-item">Customized Solutions</li>
-              </ul>
-              <a href="#" class="btn btn-primary" on:click={handleClickContact}>Contact Us</a>
             </div>
           </div>
         </div>
@@ -208,11 +155,6 @@
     margin-bottom: 16px;
   }
 
-  h2.pricing {
-    margin-top: 0;
-    padding-top: 32px;
-  }
-
   p {
     margin-bottom: 8px;
   }
@@ -231,7 +173,7 @@
   }
 
   .navbar {
-    margin-top: 24px;
+    margin-top: 0;
     margin-bottom: 32px;
   }
 
