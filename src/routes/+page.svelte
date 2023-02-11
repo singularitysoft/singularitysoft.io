@@ -29,32 +29,17 @@
   <title>Singularity Software</title>
 </head>
 <body>
+  
+  
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- svelte-ignore a11y-invalid-attribute -->
-      <a class="navbar-brand" href="#">Singularity Software</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+      <a class="navbar-brand singularity-brand" href="/">Singularity Software</a> 
   </nav>
+
   <section id="hero" class="text-center">
     <div class="container">
       <h1 class="mb-5">Revolutionize Your Business With SolarisAI</h1>
-      <p class="lead mb-5">
+      <p class="lead solaris-ai-synopsis mb-5">
         Our SolarisAI software uses cutting-edge technology to provide you with 
         actionable insights and automate tasks, freeing up time for you to 
         focus on what matters most.
@@ -65,16 +50,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-center">About Us</h2>
+          <h2 class="text-center about-us">About Us</h2>
           <p class="lead">
             We are a team of AI experts and software engineers who are passionate about using technology to solve real-world problems. We believe that AI has the power to transform industries and change the way we work and live for the better. 
           </p>
         </div>
       </div>
-
-
-
-            </div>
+    </div>
   </section>
   <section id="features">
     <div class="container">
@@ -107,15 +89,9 @@
       </div>
     </div>
   </section>
-  <section id="about">
-    <div class="container">
-      <h2 class="text-center">About Us</h2>
-      <p>We are a team of experts in artificial intelligence and machine learning, committed to providing businesses with innovative solutions that streamline their processes and help them make data-driven decisions. Our AI software is designed to be user-friendly and accessible to businesses of all sizes, so that everyone can reap the benefits of AI technology.</p>
-    </div>
-  </section>
   <section id="contact">
     <div class="container">
-      <h2 class="text-center">Contact Us</h2>
+      <h2 class="text-center contact-us">Contact Us</h2>
       <form>
         <div class="form-group">
           <label for="name">Name</label>
@@ -143,43 +119,42 @@
 
 <style>
   h1 {
+    margin-top: 48px !important;
     margin-bottom: 36px !important;
   }
 
-  h2 {
-    margin-top: 24px;
-    margin-bottom: 20px;
-  }
-
-  h2.features {
+  h2.about-us {
+    margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  p {
-    margin-bottom: 8px;
+  h2.features {
+    margin: 24px 0;
   }
 
-  p.lead {
-    margin-bottom: 32px !important;
-  }
-
-  .btn {
+  h2.contact-us {
     margin-top: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
+  }
+  
+  p.lead.solaris-ai-synopsis {
+    margin-bottom: 36px !important;
+  }
+
+  button {
+    margin: 24px 0;
   }
 
   .navbar {
     background: rgb(33,37,41) !important;
-    margin-top: 0;
-    margin-bottom: 32px;
+    opacity: 0.9;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding: 16px;
   }
 
   a.navbar-brand, a.nav-link {
     color: white !important;
-  }
-
-  .container {
-    margin-bottom: 24px;
   }
 
   section#contact .container .form-group {
@@ -190,18 +165,16 @@
     text-align: center;
   }
 
-  .navbar-expand-lg>.container {
-    padding: 8px !important;
-    margin-bottom: 8px !important;
-  }
-
   .card {
     text-align: center;
-    margin: 16px 0;
   }
 
   footer {
     padding-top: 26px;
-    padding-bottom: 1px;
+    padding-bottom: 8px;
+  }
+
+  .singularity-brand:hover {
+    cursor: pointer;
   }
 </style>
