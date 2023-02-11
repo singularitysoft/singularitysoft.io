@@ -9,6 +9,16 @@
     console.log('handleClickContact');
     window.location.href = 'mailto:myaddress@email.com?subject= Software Singularity Business Inquiry';;
   }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const subject = `Contact from ${name}`;
+    const body = `Email: ${email}\nMessage: ${message}`;
+    window.location.href = `mailto:ericgrosse1@gmail.com?subject=${subject}&body=${body}`;
+  }
 </script>
 
 <html lang="en">
@@ -172,7 +182,7 @@
           <label for="message">Message</label>
           <textarea class="form-control" id="message" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button on:click={handleSubmit} type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
   </section>
