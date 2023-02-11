@@ -163,18 +163,19 @@
     margin-bottom: 32px !important;
   }
 
-  ul li {
-    /*margin: 16px;*/
-  }
-
   .btn {
     margin-top: 24px;
     margin-bottom: 6px;
   }
 
   .navbar {
+    background: rgb(33,37,41) !important;
     margin-top: 0;
     margin-bottom: 32px;
+  }
+
+  a.navbar-brand, a.nav-link {
+    color: white !important;
   }
 
   .container {
