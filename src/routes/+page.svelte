@@ -4,26 +4,14 @@
   import 'popper.js/dist/umd/popper.min.js';
   import 'bootstrap/dist/js/bootstrap.min.js';
 
-function handleClickContact(evt) {
+  let clientName = '';
+  let clientEmail = '';
+  let clientMessage = '';
+
+function handleClick(evt) {
   evt.preventDefault();
-
-  const fromEmail = document.getElementById("email").value;
-  const fromTitle = encodeURIComponent(document.getElementById("name").value);
-  const fromBody = encodeURIComponent(document.getElementById("message").value);
-  
-  window.location.href = `mailto:ericgrosse1@gmail.com?cc=${fromEmail}&subject=${fromTitle}&body=${fromBody}`;
+  window.location.href = `mailto:ericgrosse12@gmail.com?cc=${clientEmail}&subject=${`${clientName} - Singularity Software Business Inquiry`}&body=${clientMessage}`;
 }
-
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-    const subject = `Contact from ${name}`;
-    const body = `Email: ${email}\nMessage: ${message}`;
-    window.location.href = `mailto:ericgrosse1@gmail.com?subject=${subject}&body=${body}`;
-  }
 </script>
 
 <html lang="en">
@@ -100,17 +88,17 @@ function handleClickContact(evt) {
       <form>
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name">
+          <input type="text" class="form-control" id="name" bind:value={clientName}>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control" id="email" bind:value={clientEmail}>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="3"></textarea>
+          <textarea class="form-control" id="message" rows="3" bind:value={clientMessage}></textarea>
         </div>
-        <button on:click={handleSubmit} class="btn btn-primary">Submit</button>
+        <button on:click={handleClick} class="btn btn-primary">Submit</button>
       </form>
     </div>
   </section>
