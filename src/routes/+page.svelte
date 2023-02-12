@@ -8,10 +8,10 @@
   let clientEmail = '';
   let clientMessage = '';
 
-function handleClick(evt) {
+/*function handleClick(evt) {
   evt.preventDefault();
   window.location.href = `mailto:ericgrosse12@gmail.com?cc=${clientEmail}&subject=${`${clientName} - Singularity Software Business Inquiry`}&body=${clientMessage}`;
-}
+}*/
 </script>
 
 <div class="page">
@@ -88,7 +88,7 @@ function handleClick(evt) {
           <label for="message">Message</label>
           <textarea class="form-control" id="message" rows="3" bind:value={clientMessage}></textarea>
         </div>
-        <button on:click={handleClick} class="btn btn-primary">Submit</button>
+        <button class="btn btn-primary">Submit</button>
       </form>
     </div>
   </section>
