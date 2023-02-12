@@ -1,12 +1,5 @@
 <script>
   import 'bootstrap/dist/css/bootstrap.min.css';
-  import 'jquery/dist/jquery.slim.min.js';
-  import 'bootstrap/dist/js/bootstrap.min.js';
-  import { onMount } from 'svelte';
-
-  onMount(() => {
-    import('popper.js/dist/umd/popper.min.js');
-  });
 
   let clientName = '';
   let clientEmail = '';
