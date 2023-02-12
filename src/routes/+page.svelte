@@ -163,7 +163,7 @@ function handleClickContact(evt) {
     font-size: 36px;
   }
 
-  a.navbar-brand, a.nav-link {
+  a.navbar-brand {
     color: white !important;
   }
 
