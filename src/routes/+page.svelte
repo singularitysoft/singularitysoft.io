@@ -83,7 +83,7 @@
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="3" bind:value={clientMessage}></textarea>
+          <textarea class="form-control" id="message" rows="5" bind:value={clientMessage}></textarea>
         </div>
         <button on:click={handleClick} class="btn btn-primary">Submit</button>
       </form>
@@ -154,6 +154,17 @@
     color: white;
   }
 
+  section#contact {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 450px) {
+    section#contact {
+      width: 100%;
+    }
+  }
+
   section#contact .container .form-group {
     text-align: left;
   }
@@ -173,7 +184,7 @@
   footer {
     border-top: 1px solid #0000002b;
     padding-top: 26px;
-    padding-bottom: 8px;
+    padding-bottom: 26px;
     text-align: center;
   }
 
