@@ -12,14 +12,14 @@
 </script>
 
 <div class="page">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand singularity-brand" href="/">Singularity Software</a> 
+  <nav>
+    <span>Singularity Software</span> 
   </nav>
   
   <section id="hero" class="text-center">
     <div class="container">
       <h1 class="mb-5">Revolutionize Your Business With SolarisAI</h1>
-      <p class="lead solaris-ai-synopsis mb-5">
+      <p class="lead mb-5">
         Our SolarisAI software uses cutting-edge technology to provide you with 
         actionable insights and automate tasks, freeing up time for you to 
         focus on what matters most.
@@ -99,12 +99,12 @@
 <style>
   h1 {
     font-size: 32px;
-    margin-top: 48px !important;
-    margin-bottom: 36px !important;
+    margin-top: 36px !important;
+    margin-bottom: 28px !important;
   }
 
   h2.about-us {
-    margin-top: 16px;
+    margin-top: 28px;
     margin-bottom: 16px;
   }
 
@@ -116,8 +116,12 @@
     margin-top: 24px;
     margin-bottom: 16px;
   }
+
+  h4 {
+    margin-bottom: 24px;
+  }
   
-  p.lead.solaris-ai-synopsis {
+  p.lead {
     margin-bottom: 36px !important;
   }
 
@@ -125,20 +129,17 @@
     margin: 24px 0;
   }
 
-  .navbar {
-    background: rgb(33,37,41) !important;
-    opacity: 0.9;
-    flex-direction: column;
-    margin-bottom: 24px;
+  nav {
+    margin-top: -8px;
     padding: 16px;
+    background: rgb(33,37,41);
+    opacity: 0.9;
+    text-align: center;
   }
 
-  a.navbar-brand {
+  nav span {
     font-size: 36px;
-  }
-
-  a.navbar-brand {
-    color: white !important;
+    color: white;
   }
 
   section#contact .container .form-group {
@@ -151,6 +152,10 @@
 
   .card {
     text-align: center;
+  }
+
+  .card-body {
+    padding: 32px;
   }
 
   footer {
